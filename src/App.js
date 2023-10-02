@@ -1,7 +1,12 @@
-
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import VendingMachine from './VendingMachine';
+import HotCheetos from "./HotCheetos";
+import Funyuns from "./Funyuns";
+import Doritos from "./Doritos";
+import Snack from "./Snack";
+
+/** App: Specifies routes */
 
 function App() {
   return (
@@ -9,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<VendingMachine />}></Route>
+          <Route path="/:snack" element={<Snack />}></Route>
           <Route path="/HotCheetos" element={<HotCheetos />}></Route>
           <Route path="/Funyuns" element={<Funyuns />}></Route>
           <Route path="/Doritos" element={<Doritos />}></Route>
