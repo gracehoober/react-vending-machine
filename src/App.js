@@ -5,6 +5,7 @@ import HotCheetos from "./HotCheetos";
 import Funyuns from "./Funyuns";
 import Doritos from "./Doritos";
 import Snack from "./Snack";
+import NavBar from './NavBar';
 
 /** App: Specifies routes */
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route path="/" element={<VendingMachine />}></Route>
           <Route path="/:snack" element={<Snack />}></Route>
